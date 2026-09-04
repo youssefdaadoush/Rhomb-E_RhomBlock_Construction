@@ -9,22 +9,26 @@ This README covers the **motion-planning engine** specifically
 repository (3D models, CAD, firmware) are documented separately as
 they are added.
 
-## Presentation materials (`presentation/`)
+## Demo (`demo/`)
 
-- **[`Relative Robots.gh`](presentation/Relative%20Robots.gh)** - a
-  bare-bones Grasshopper starter template. It contains only the
-  generic parametric lattice/voxel grid (the U/V/W point grid the rest
-  of this project builds on) - it does **not** include the Rhomb-E
-  robot or RhomBlock geometry. This is intentional: it is meant as an
-  open starting point so that anyone can plug in their own robot and
-  block designs on top of the same voxel-grid logic, instead of
-  starting from a blank canvas. Open it directly in Rhino 7/8's
-  Grasshopper - it is self-contained and parametric (adjust the
-  sliders to change the grid's size/spacing), no plugins required
-  beyond Grasshopper itself.
-- **[`Relative Robots CRC Work.mp4`](presentation/Relative%20Robots%20CRC%20Work.mp4)**
-  - demo video. Click through to GitHub's file view to watch it
-  directly in the browser (no download needed).
+### Video
+
+[![Watch the demo video](demo/thumbnail.jpg)](demo/Relative%20Robots%20CRC%20Work.mp4)
+
+**▶ Click the image above to watch [`Relative Robots CRC Work.mp4`](demo/Relative%20Robots%20CRC%20Work.mp4) directly in your browser - it plays right on the GitHub page, no download needed.**
+
+### Grasshopper starter template
+
+**[`Relative Robots.gh`](demo/Relative%20Robots.gh)** - a bare-bones
+Grasshopper starter template. It contains only the generic parametric
+lattice/voxel grid (the U/V/W point grid the rest of this project
+builds on) - it does **not** include the Rhomb-E robot or RhomBlock
+geometry. This is intentional: it is meant as an open starting point
+so that anyone can plug in their own robot and block designs on top of
+the same voxel-grid logic, instead of starting from a blank canvas.
+Open it directly in Rhino 7/8's Grasshopper - it is self-contained and
+parametric (adjust the sliders to change the grid's size/spacing), no
+plugins required beyond Grasshopper itself.
 
 ## Rhomb-E Motion Engine
 
