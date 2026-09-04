@@ -11,11 +11,20 @@ they are added.
 
 ## Demo (`demo/`)
 
-### Video
+### Videos
 
-[![Watch the demo video](demo/thumbnail.jpg)](demo/Relative%20Robots%20CRC%20Work.mp4)
+[![Watch the Rhomb-E robot demo](demo/rhombe_thumbnail.jpg)](demo/Rhomb-E.mp4)
 
-**▶ Click the image above to watch [`Relative Robots CRC Work.mp4`](demo/Relative%20Robots%20CRC%20Work.mp4) directly in your browser - it plays right on the GitHub page, no download needed.**
+**▶ [`Rhomb-E.mp4`](demo/Rhomb-E.mp4) - the Rhomb-E robot picking up
+and placing RhomBlocks on the lattice.** Click the image to watch it
+directly in your browser, no download needed.
+
+[![Watch the lattice/voxel grid demo](demo/thumbnail.jpg)](demo/Relative%20Robots%20CRC%20Work.mp4)
+
+**▶ [`Relative Robots CRC Work.mp4`](demo/Relative%20Robots%20CRC%20Work.mp4)
+- the parametric lattice/voxel grid on its own** (matches the starter
+template below). Click the image to watch it directly in your browser,
+no download needed.
 
 ### Grasshopper starter template
 
