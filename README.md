@@ -1,4 +1,15 @@
-# Rhomb-E Motion Engine
+# Rhomb-E_RhomBlock_Construction
+
+Repository containing 3D models, block geometries, robot CAD, Python
+simulation scripts, Arduino firmware and supplementary materials for
+the Rhomb-E & RhomBlock system.
+
+This README covers the **motion-planning engine** specifically
+(`rhombe_motion/`, `grasshopper/`, `tests/`); other materials in this
+repository (3D models, CAD, firmware) are documented separately as
+they are added.
+
+## Rhomb-E Motion Engine
 
 External Python motion-planning engine for **Rhomb-E**, a bipedal,
 5-DOF relative construction robot that moves and builds on the
@@ -10,7 +21,7 @@ Grasshopper through small `GhPython` bridge scripts.
 See the accompanying paper: *"Rhomb-E Relative Robots: A Collective
 Construction System for Small Reversible Blocks"* (eCAADe 2026).
 
-## Status
+### Status
 
 Single-robot motion is the current focus: pick up a block, transport
 it, place it, and return home, all while respecting the robot's real
@@ -18,7 +29,7 @@ physical constraints. Collective/multi-robot coordination and
 reinforcement-learning-based planning are planned future stages, not
 part of this repository yet.
 
-## Architecture
+### Architecture
 
 ```
 rhombe_motion/
@@ -42,7 +53,7 @@ tools/analyze_ghx.py      Standalone script to inspect a Grasshopper
                            .ghx export (component list, wiring).
 ```
 
-## Physical constraints modeled
+### Physical constraints modeled
 
 All of these are enforced by `rhombe_motion/behaviors.py` and covered
 by the test suite:
@@ -66,13 +77,13 @@ by the test suite:
   future foot-landing search (see `complete_assembly_cycle`'s
   `occupied` parameter).
 
-## Running the tests
+### Running the tests
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-## Using it from Grasshopper
+### Using it from Grasshopper
 
 Each script in `grasshopper/` is meant to be pasted into a GhPython
 component. They all take a `project_path` input (this repository's
@@ -87,6 +98,7 @@ and exposes `isCarrying_out` / `stonePlaced_out` toggles for driving
 the carried/placed block's visibility, plus `occupiedU_out` /
 `occupiedV_out` to chain multiple placements in the same build.
 
-## License
+### License
 
-MIT - see [LICENSE](LICENSE).
+The motion-engine code (`rhombe_motion/`, `grasshopper/`, `tests/`,
+`tools/`) is MIT-licensed - see [LICENSE](LICENSE).
