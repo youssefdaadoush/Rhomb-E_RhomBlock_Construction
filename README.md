@@ -48,8 +48,9 @@ Grasshopper stays the visualization/UI layer; this library holds the
 actual, independently testable kinematics and is imported into
 Grasshopper through small `GhPython` bridge scripts.
 
-See the accompanying paper: *"Rhomb-E Relative Robots: A Collective
-Construction System for Small Reversible Blocks"* (eCAADe 2026).
+See the accompanying paper: [*"Rhomb-E Relative Robots: A Collective
+Construction System for Small Reversible Blocks"*](https://papers.cumincad.org/cgi-bin/works/paper/ecaade2026_520)
+(eCAADe 2026).
 
 ### Status
 
